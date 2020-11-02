@@ -1,0 +1,13 @@
+.header {
+  font-family: "Fredoka One", cursive;
+  font-size: 100px;
+  color: rgb(223, 223, 223);
+  -webkit-text-stroke: 5px #008c76;
+}
+/* 
+@700; */
+@media (max-width: 600px) {
+  .header {
+    font-size: 60px;
+  }
+}
