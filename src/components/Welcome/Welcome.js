@@ -1,14 +1,21 @@
 import React from "react";
+import "./Welcome.css";
 
 export default function Welcome({ handleStartedClick }) {
   return (
-    <div>
-      <h4>Welcome to "Who's Said It?", an Office trivia game.</h4>
-
-      <h2>"'You fail 100% of the Office trivia you don't try' - Somebody"</h2>
-      <h3>- Michael Scott </h3>
-
-      <button onClick={handleStartedClick}>Get Started</button>
+    <div className="welcome-container">
+      <h1 className="welcome-header">Welcome to "Who Said It?"</h1>
+      <h2 className="welcome-subheader">An Office Trivia Game</h2>
+      <div className="get-started-container">
+        <button className="get-started" onClick={handleStartedClick}>
+          START
+        </button>
+      </div>
+      <img
+        className="office-sign"
+        src="/images/the-office.png"
+        alt="The Office Sign"
+      />
     </div>
   );
 }

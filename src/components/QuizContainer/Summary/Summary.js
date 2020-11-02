@@ -1,4 +1,5 @@
 import React from "react";
+import "./Summary.css";
 
 export default function Summary({ totalQuestions, totalCorrect }) {
   function handleTryAgainClick() {
@@ -11,14 +12,16 @@ export default function Summary({ totalQuestions, totalCorrect }) {
   resultImagePath += success ? "success.gif" : "fail.gif";
 
   return (
-    <>
-      <div>{`Score: ${totalCorrect} out of ${totalQuestions}`}</div>
+    <div className="summary-container">
+      <div className="score">{`Score: ${totalCorrect} out of ${totalQuestions}`}</div>
 
-      <div>
+      <div className="character-img-container">
         <img className="character-img" src={resultImagePath} alt="Result GIF" />
       </div>
 
-      <button onClick={handleTryAgainClick}>Try Again</button>
-    </>
+      <button className="small-btn" onClick={handleTryAgainClick}>
+        Try Again
+      </button>
+    </div>
   );
 }

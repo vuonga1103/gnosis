@@ -1,4 +1,5 @@
 import React from "react";
+import "./Choice.css";
 
 export default function Choice({
   choice,
@@ -10,26 +11,26 @@ export default function Choice({
     if (!selectedChoice) setSelectedChoice(choice);
   }
 
-  function setFontColor() {
+  function setColor() {
     if (selectedChoice) {
-      // If the user has made a choice
-      // If the choice is the selected choice and the selected choice is incorrect
-      // If the choice is the selected choice and the selected choice is correct
-      // If the choice is not the selected choice and the choice is correct
       if (choice === selectedChoice && choice !== correctChoice) {
-        return "red";
+        return "#ea5455";
       } else if (choice === selectedChoice && choice === correctChoice) {
-        return "green";
+        return "#28df99";
       } else if (choice !== selectedChoice && choice === correctChoice) {
-        return "green";
+        return "#28df99";
       } else {
-        return "grey";
+        return "#696969";
       }
     }
   }
 
   return (
-    <div onClick={handleChoiceSelect} style={{ color: setFontColor() }}>
+    <div
+      className={`choice ${selectedChoice && "disable"}`}
+      onClick={handleChoiceSelect}
+      style={{ backgroundColor: setColor() }}
+    >
       {choice}
     </div>
   );

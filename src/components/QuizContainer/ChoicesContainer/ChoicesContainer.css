@@ -1,0 +1,15 @@
+.choices-container {
+  display: grid;
+  grid-template-columns: minmax(40%, 40%) minmax(40%, 40%);
+  grid-gap: 1rem;
+  justify-content: center;
+  padding: 1rem 3rem;
+}
+
+.choices-container:hover > .choice:not(:hover) {
+  transform: scale(0.8);
+}
+
+.disable-container:hover > .choice:not(:hover) {
+  transform: none;
+}

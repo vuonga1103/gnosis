@@ -1,0 +1,33 @@
+.choice {
+  box-shadow: 0 1.4px 2.2px rgba(0, 0, 0, 0.022),
+    0 3.4px 5.3px rgba(0, 0, 0, 0.032), 0 6.4px 10px rgba(0, 0, 0, 0.04),
+    0 11.4px 17.9px rgba(0, 0, 0, 0.048), 0 21.3px 33.4px rgba(0, 0, 0, 0.058),
+    0 51px 80px rgba(0, 0, 0, 0.08);
+  padding: 1rem;
+  font-size: 1.5rem;
+  border-radius: 15px;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+.choice:hover {
+  transform: scale(1.05);
+  background-color: #00bcd4;
+  color: white;
+}
+
+.disable {
+  cursor: default;
+  color: white;
+}
+
+.disable:hover {
+  transform: none;
+  color: white;
+}
+
+@media (max-width: 639px) {
+  .choice {
+    font-size: 1rem;
+  }
+}

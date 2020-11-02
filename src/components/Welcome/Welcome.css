@@ -1,0 +1,74 @@
+.welcome-container {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.welcome-header {
+  margin-top: 2rem;
+  font-size: 2rem;
+  color: black;
+}
+
+.welcome-subheader {
+  font-size: 1.5rem;
+  color: grey;
+  font-style: italic;
+  margin-top: -1rem;
+}
+
+.office-sign {
+  max-width: 70%;
+  margin-top: auto;
+}
+
+.get-started-container {
+  margin-top: 4rem;
+}
+
+.get-started {
+  text-align: center;
+  padding-bottom: 5px;
+  padding-left: 30px;
+  padding-right: 30px;
+  border-radius: 10px;
+  outline: none;
+  border: none;
+  font-family: "Noto Sans JP", sans-serif;
+  font-size: 60px;
+  color: white;
+  background-color: rgb(24, 24, 24);
+  cursor: pointer;
+}
+
+.get-started:hover {
+  color: rgb(177, 177, 177);
+}
+
+@media (max-width: 639px) {
+  .welcome-header {
+    font-size: 1.3rem;
+  }
+
+  .welcome-subheader {
+    font-size: 1rem;
+    margin-top: -0.5rem;
+  }
+
+  .office-sign {
+    max-width: 300px;
+    margin-top: 1rem;
+  }
+
+  .get-started-container {
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+  }
+
+  .get-started {
+    font-size: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+}

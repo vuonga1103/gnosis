@@ -1,0 +1,13 @@
+.summary-container {
+  margin: 1rem;
+}
+
+.score {
+  font-size: 2rem;
+}
+
+@media (max-width: 649px) {
+  .score {
+    font-size: 1.5rem;
+  }
+}

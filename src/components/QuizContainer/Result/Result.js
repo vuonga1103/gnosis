@@ -10,15 +10,19 @@ export default function Result({
   const imgPath = `/images/${correctChoice.toLowerCase()}.gif`;
 
   return (
-    <div>
+    <div className="result-container">
       <div>
         {userChoseCorrect ? "You got it!" : `${selectedChoice} is incorrect.`}
       </div>
-      <div>The correct answer is {correctChoice}.</div>
+      <div className="correct-answer">
+        The correct answer is <strong>{correctChoice}</strong>.
+      </div>
 
-      <button onClick={setNextQuestion}>Next</button>
+      <button className="small-btn" onClick={setNextQuestion}>
+        NEXT
+      </button>
 
-      <div>
+      <div className="character-img-container">
         <img className="character-img" src={imgPath} alt="Character GIF" />
       </div>
     </div>
