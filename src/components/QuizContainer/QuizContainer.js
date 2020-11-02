@@ -33,9 +33,9 @@ export default function QuizContainer() {
   }, [currentQuestionIdx]);
 
   function fetchQuestions() {
-    return fetch("http://localhost:3000/questions").then((response) =>
-      response.json()
-    );
+    return fetch(
+      "https://my-json-server.typicode.com/vuonga1103/gnosis-backend/questions"
+    ).then((response) => response.json());
   }
 
   function shuffle(a) {
