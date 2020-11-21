@@ -105,6 +105,7 @@ export default function QuizContainer() {
   }
 
   let allQuestionsAnswered = currentQuestionIdx > questions.length - 1;
+
   return (
     <div>{allQuestionsAnswered ? displaySummary() : displayQuestion()}</div>
   );
